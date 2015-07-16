@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+	  <script>
+			function zero(){
+				document.getElementById('txtIO').value += 0;
+			}
+			function one(){
+				document.getElementById('txtIO').value += 1;
+			}
+			function two(){
+				document.getElementById('txtIO').value += 2;
+			}
+			function three(){
+				document.getElementById('txtIO').value += 3;
+			}
+			function four(){
+				document.getElementById('txtIO').value += 4;
+			}
+			function five(){
+				document.getElementById('txtIO').value += 5;
+			}
+			function six(){
+				document.getElementById('txtIO').value += 6;
+			}
+			function seven(){
+				document.getElementById('txtIO').value += 7;
+			}
+			function eight(){
+				document.getElementById('txtIO').value += 8;
+			}
+			function nine(){
+				document.getElementById('txtIO').value += 9;
+			}
+			function clr(){
+				document.getElementById('txtIO').value ="";
+			}
+			
+			function add(){
+				document.getElementById('txtIO').value += '+';
+			}
+			
+			function sub(){
+				document.getElementById('txtIO').value += '-';
+			}
+			
+			function mul(){
+				document.getElementById('txtIO').value += '*';
+			}
+			
+			function div(){
+				document.getElementById('txtIO').value += '/';
+			}
+			
+			function equal(){
+			var output = eval(document.getElementById('txtIO').value);
+			document.getElementById('txtIO').value = output;
+		
+			}
+		</script>
+    </head>
+
+    <body>
+    
+	<div class="divider"> </div>
+	  <div class="section">
+		<h5 class="card-panel teal lighten-2">Calculator</h5>
+	</div>
+	
+	<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12 purple-text text-deep-purple lighten-4">
+          <input id="txtIO" type="text" class="validate purple-text text-deep-purple lighten-4" placeholder="Enter a number">
+        </div>
+      </div>
+      </div>
+    </form>
+	
+	
+	<div class="section">
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="seven()">7</button>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="eight()">8</button>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="nine()">9</button>
+		<button class="btn-floating waves-effect waves-light deep-purple lighten-2" onclick="div()">/</button> <br>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="four()">4</button>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="five()">5</button>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="six()">6</button>
+		<button class="btn-floating waves-effect waves-light deep-purple lighten-2" onclick="mul()">*</button> <br>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="one()">1</button>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="two()">2</button>
+		<button class="btn-floating waves-effect waves-light purple lighten-2" onclick="three()">3</button>
+		<button class="btn-floating waves-effect waves-light deep-purple lighten-2" onclick="sub()">-</button> <br>
+		<button class="btn-floating waves-effect waves-light deep-purple lighten-2" onclick="zero()">0</button>
+		<button class="btn-floating waves-effect waves-light deep-purple lighten-2" onclick="clr()">C</button>
+		<button class="btn-floating waves-effect waves-light deep-purple lighten-2" onclick="add()">+</button>
+		<button class="btn-floating waves-effect waves-light deep-purple lighten-2" onclick="equal()">=</button> <br>
+		
+	</div>
+	
+    </body>
+  </html>
